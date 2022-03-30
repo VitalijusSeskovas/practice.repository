@@ -2,187 +2,176 @@
 
 /*Better control over the box-model measurements*/ 
 *{
-    margin: 0;
-    padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-   
+margin: 0;
+padding: 0;
+border: none;
+text-decoration: none;
+box-sizing: border-box; 
 } 
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    color:black;
+font-family: 'Poppins', sans-serif;
+font-weight: 300;
 }
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    color: #044421;
+        display: block;
+        font-size: 1.5em;
+        text-align: center; 
+        font-weight: bold;
+        }
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    color: #472f0f;
+}
+
+
 
 /*Logo and navigation menu*/
 
 nav {
-    height: 70px;
-    width: 100%;
+height: 70px;
+width: 100%;
 }
 
- label.logo {
-   color:#044421;
-   font-size: 35px;
-   line-height: 80px;
-   padding: 0 100px;
-   font-weight: bold;
-   float: left;
- }
- nav ul {
-     float: right;
-     margin-right: 20px;
- }
+label.logo {
+color:#472f0f;
+font-size: 50px;
+line-height: 80px;
+padding: 0 100px;
+font-weight: bold;
+float: left;
+}
 
- nav ul li {
-     display: inline-block;
-     line-height: 75px;
-     margin: 0 5px;
-     padding: 7px 13px;
-     border-radius: 3px;
- }
+nav ul {
+float: right;
+margin-right: 20px;
+}
 
- nav ul li a {
-     color: #166b56;
-     font-size: 15px;
- }
+nav ul li {
+display: inline-block;
+line-height: 75px;
+margin: 0 5px;
+padding: 7px 13px;
+border-radius: 3px;
+}
 
- a.active, a:hover {
-background: lightgray;
+nav ul li a {
+color: #044421;
+font-size: 15px;
+}
+
+a.active, a:hover {
+background: #b1a583;
 transition: .5s;
- }
+}
 
- /*Hero image and text covers*/
+/*Hero image and text covers*/
 
 #hero-image {
-        height: 600px;
-        width: 100%;
-        margin-top: 30px;
-        background-image: url(../images/depositphotos_544819246-stock-photo-escrima-kapap-instructor-demonstrates-sticks.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+height: 600px;
+width: 100%;
+margin-top: 30px;
+background-image: url(../images/depositphotos_544819246-stock-photo-escrima-kapap-instructor-demonstrates-sticks.jpg);
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
 
-    /*Explore section, need add pictures*/
-
-  #information {
-    height: 240px;
-    display: flex;
-    background-color: beige;
-    align-content: center;
+/*Explore section, need add pictures*/
+.column1of3, .column2of3, .column3of3 {
+    width: 30%;
     text-align: center;
-    justify-content: center;
-    font-size: 100%;
-    margin: 20px 0;
-}
-
-.box {
-    width: 500px auto;
-    height: 280px auto;
-    padding: 20px;
-    margin: 20px ;
-    box-shadow: 0px 0px 10px 2px grey;
-    border: 5px solid grey;
-}
-
-  #about {
-    padding-top: 30px;
-    width: 33%;
     float: left;
-    background-color: blue;
-  }
+    margin: 10px;
+}
 
-  #goals {
-      padding-top: 30px;
-      width: 33%;
-      float: right;
-      background-color: burlywood;
-  }
+/*Contact us section*/
+#contactform {
+padding: 50px;
+background-color: #3e88dd;
+height: 200%;
+width: 100%;
+color: #FEFFED;
+margin: auto;
+text-align: center;
+border: 1px solid black;
+}
 
-  #philosophy {
-    padding-top: 30px;
-    width: 33%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: red;
-  }
-
-    /*Contact us section*/
-    .container {
-        padding: 50px;
-        background-color: rgba(30, 100, 110, 1);
-        height: 150%;
-        width: auto;
-        color: #FEFFED;
-        margin-top: 30px;
-        text-align: center;
-    }
-    
+#contactform {
+max-width: 300px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+ 
 /*Working times*/
 
-    #details {
-        margin-bottom: 2px;
-    }
+#details {
+margin-bottom: 1px;
+}
 
-    .details-boxes-container {
-        width: 66%;
-        margin: 0 auto;
-    }
+.details-boxes-container {
+width: 66%;
+margin: 0 auto;
+}
     
-    .details-box-left {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
-        text-align: center;
-    }
+.details-box-left {
+width: 250px;
+height: 200px;
+margin: 0 auto;
+text-align: center;
+}
     
-    .details-box-right {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
-        text-align: center;
-    }
+.details-box-right {
+width: 250px;
+height: 250px;
+margin: 0 auto;
+text-align: center;
+}
     
-    .details-box-center {
-        width: 250px;
-        height: 250px;
-        margin: 0 auto;
-        text-align: center;
-    }
+.details-box-center {
+width: 250px;
+height: 250px;
+margin: 0 auto;
+text-align: center;
+}
 
   
-    input[type="submit" i] {
-        appearance: auto;
-        user-select: none;
-        white-space: pre;
-        align-items: flex-start;
-    }
+input[type="submit" i] {
+appearance: auto;
+user-select: none;
+white-space: pre;
+align-items: flex-start;
+}
 
-    .h3 {
-        text-align: center;
-    }
+.h3 {
+text-align: center;
+}
 
-/*footer*/
+/*Footer*/
 
 footer {
-    height: 150px;  
+height: 150px;  
 }
 
 .social-networks {
-    text-align: center;
+text-align: center;
 }
 
 .social-networks > li {
-    display: inline;
+display: inline;
 }
 
 .social-networks i {
-    font-size: 160%;
-    margin: 0.5%;
-    padding: 5%;
-    color:#044421
+font-size: 160%;
+margin: 0.5%;
+padding: 5%;
+color:#044421
 }
