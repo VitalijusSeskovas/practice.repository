@@ -15,22 +15,20 @@ font-weight: 300;
 }
 
 h1, h2 {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 4px;
-    color: #044421;
-        display: block;
-        font-size: 1.5em;
-        text-align: center; 
-        font-weight: bold;
-        }
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 4px;
-    color: #472f0f;
+font-family: 'Poppins', sans-serif;
+letter-spacing: 4px;
+color: #044421;
+display: block;
+font-size: 1.5em;
+text-align: center; 
+font-weight: bold;
 }
 
-
+h3 {
+font-family: 'Poppins', sans-serif;
+letter-spacing: 4px;
+color: #472f0f;
+}
 
 /*Logo and navigation menu*/
 
@@ -86,10 +84,12 @@ background-size: cover;
 
 /*Explore section, need add pictures*/
 .column1of3, .column2of3, .column3of3 {
-    width: 30%;
-    text-align: center;
-    float: left;
-    margin: 10px;
+width: 30%;
+text-align: center;
+float: left;
+margin: 10px;
+border-radius: 2px #000000;
+background-color: bisque;
 }
 
 /*Contact us section*/
@@ -127,6 +127,7 @@ width: 250px;
 height: 200px;
 margin: 0 auto;
 text-align: center;
+vertical-align: top;
 }
     
 .details-box-right {
@@ -175,3 +176,10 @@ margin: 0.5%;
 padding: 5%;
 color:#044421
 }
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #club-ethos {
+    width: 65%;
+    height: 1200px;
+    margin: 0 auto;
