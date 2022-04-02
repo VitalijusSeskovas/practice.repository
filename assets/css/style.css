@@ -14,7 +14,16 @@ body {
     font-weight: 300;
 }
 
-h1, h2 {
+.logo {
+        color: #472f0f;
+        font-size: 2em;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight: bold;
+        float: left;
+}
+
+h2 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 4px;
     color: #044421;
@@ -30,38 +39,26 @@ h3 {
     color: #472f0f;
 }
 
-/*Logo and navigation menu*/
+/*navigation menu*/
 
 nav {
-    height: 70px;
-    width: 100%;
-}
-
-label.logo {
-    color: #472f0f;
-    font-size: 50px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    float: left;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav ul {
-    float: right;
-    margin-right: 20px;
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
 }
 
-nav ul li {
-    display: inline-block;
-    line-height: 75px;
-    margin: 0 5px;
-    padding: 7px 13px;
-    border-radius: 3px;
+nav li {
+    display: inline;
+    margin-right: 40px;
 }
 
-nav ul li a {
+nav li a {
     color: #044421;
-    font-size: 15px;
 }
 
 a.active, a:hover {
@@ -89,7 +86,7 @@ a.active, a:hover {
     float: left;
     margin: 10px;
     border-radius: 2px;
-    background: bisque url("http://clipart-library.com/images_k/transparent-background-png-free/transparent-background-png-free-12.png") no-repeat center center;
+    background: bisque;
 }
 
 /*Contact us section*/
@@ -178,11 +175,28 @@ footer {
     color: #044421
 }
 
-/* For larger to medium screens size from 1200px wide and down */
+/* For larger to medium screens size from 768px wide and down */
 
 @media (max-width: 768px) {
-  h1 {
-      font-size: 0.75em;
+  .logo {
+      font-size: 1em;
   }
+.menu  {
+    font-size: 0.75em !important;
+    flex-direction: column;
+    align-items: baseline;
 
 }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 0.75em;
+    }
+    .menu  {
+        font-size: 0.5em !important;
+        flex-direction: column;
+        align-items: baseline;
+    
+    } 
+  }
