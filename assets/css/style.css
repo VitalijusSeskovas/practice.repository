@@ -42,7 +42,7 @@ h3 {
 /*navigation menu*/
 
 nav {
-    font-size: 1em;
+    
     display: flex;
     justify-content: space-evenly;
 }
@@ -54,14 +54,16 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 nav li a {
     color: #044421;
+    text-align: right;
+    font-size: 1em;
 }
 
-a.active, a:hover {
+a:hover {
     background: #b1a583;
     transition: .5s;
 }
@@ -79,7 +81,7 @@ a.active, a:hover {
     background-size: cover;
 }
 
-/*Explore section, need add pictures*/
+/*Explore section*/
 .column1of3, .column2of3, .column3of3 {
     width: 30%;
     text-align: center;
@@ -181,22 +183,23 @@ footer {
   .logo {
       font-size: 1em;
   }
-.menu  {
+ul li {
     font-size: 0.75em !important;
     flex-direction: column;
-    align-items: baseline;
+    align-items: flex-end;
+    display: block;
 
 }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .logo {
         font-size: 0.75em;
     }
-    .menu  {
+    nav ul li  {
         font-size: 0.5em !important;
         flex-direction: column;
-        align-items: baseline;
+        align-items: flex-end;
     
     } 
   }
