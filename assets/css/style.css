@@ -1,205 +1,319 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,200;1,300&display=swap');
 
-/*Better control over the box-model measurements*/
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    scroll-behavior: smooth;
+}
+  
+.navbar {
+    background: #dba569;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+  
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+  
+#navbar__logo {
+    font-family: 'Lobster', sans-serif;
+    background-color: #f8f6f0;
+    background-image: linear-gradient(to top,  #fad471 0%, #39291c 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+  
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+  
+.navbar__item {
+    height: 80px;
+}
+  
+.navbar__links {
+    color: #fff4b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+  
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #db4673;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #f59610, #df5d5d, #9750c7);
+    color: #fad471;
+    transition: all 0.3s ease;
+}
+  
+.navbar__links:hover {
+    color: #412f21;
+    transition: all 0.3s ease;
+}
+  
+
+
+/*hero image*/
+.hero {
+    max-width: 100%;
+    width: 2500px;
+    margin: 0;
+    padding: 0;
+}
+/*main section pictures and text*/
+img {
+    width: 25%;
+    margin: 5px;
+    padding-bottom: 0%;
+    
+}
+  .main__box1 {
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: #ffeef0;
 }
 
-.logo {
-        color: #472f0f;
-        font-size: 2em;
-        line-height: 80px;
-        padding: 0 100px;
-        font-weight: bold;
-        float: left;
+.main__box2 {
+    letter-spacing: 1px;
+    display: inline-block;
+    background-color: #fef9e7;
+
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 4px;
-    color: #044421;
-    display: block;
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: bold;
+    text-shadow: 2px 2px rgb(168, 141, 91);
+    font-size: 35px;
 }
 
-h3 {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 4px;
-    color: #472f0f;
-}
-
-/*navigation menu*/
-
-nav {
-    
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul {
-    margin: 0px;
-    padding: 5px 0px 5px 30px;
-}
-
-nav li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav li a {
-    color: #044421;
-    text-align: right;
-    font-size: 1em;
-}
-
-a:hover {
-    background: #b1a583;
-    transition: .5s;
-}
-
-/*Hero image and text covers*/
-
-#hero-image {
-    height: 600px;
+/*singup form and background page styling*/
+.background {
     width: 100%;
-    margin-top: 30px;
-    background-image: url(../images/depositphotos_544819246-stock-photo-escrima-kapap-instructor-demonstrates-sticks.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 100%;
 }
 
-/*Explore section*/
-.column1of3, .column2of3, .column3of3 {
-    width: 30%;
-    text-align: center;
+/*sing up form*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+/* Set a style for all buttons */
+button {
+    background-color: #b3860c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity: 1;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
     float: left;
-    margin: 10px;
-    border-radius: 2px;
-    background: bisque;
+    width: 50%;
 }
-
-/*Contact us section*/
-#contactform {
-    padding: 50px;
-    background-color: #3e88dd;
-    height: 200%;
-    width: 100%;
-    color: #FEFFED;
-    margin: auto;
-    text-align: center;
-    border: 1px solid black;
+  
+/* Add padding to container elements */
+.container {
+    padding: 16px;
 }
-
-#contactform {
-    max-width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*Working times*/
-
-#details {
+  
+/* Clear floats */
+.clearfix::after {
+    content: "";
     clear: both;
-    margin-bottom: 1px;
+    display: table;
 }
 
-.details-boxes-container {
-    width: 66%;
-    margin: 0 auto;
-}
-
-.details-box-left {
-    width: 250px;
-    height: 150px;
-    margin: 0 auto;
-    
-    vertical-align: top;
-    text-align: -internal-center;
-}
-
-.details-box-right {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.details-box-center {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-input[type="submit" i] {
-    appearance: auto;
-    user-select: none;
-    white-space: pre;
-    align-items: flex-start;
-}
-
-.h3 {
-    text-align: center;
-}
-
-/*Footer*/
-
-footer {
+/* Footer */
+footer{
     height: 150px;
 }
 
-.social-networks {
+.social-networks{
     text-align: center;
+    color: #b3860c;
+
 }
 
-.social-networks > li {
+.social-networks li{
     display: inline;
 }
 
-.social-networks i {
+.social-networks i{
     font-size: 160%;
-    margin: 0.5%;
+    margin: 1%;
     padding: 5%;
-    color: #044421
+    color: #3a3a3a;
 }
 
-/* For larger to medium screens size from 768px wide and down */
-
-@media (max-width: 768px) {
-  .logo {
-      font-size: 1em;
-  }
-ul li {
-    font-size: 0.75em !important;
-    flex-direction: column;
-    align-items: flex-end;
-    display: block;
-
-}
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 0.75em;
+/*navigation media query for 960px screen*/
+@media screen and (max-width: 960px) {
+    .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
     }
-    nav ul li  {
-        font-size: 0.5em !important;
-        flex-direction: column;
-        align-items: flex-end;
-    
-    } 
-  }
+  
+    .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: -1;
+    }
+  
+    .navbar__menu.active {
+      background: hsl(32, 62%, 50%);
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 60vh;
+      font-size: 1.6rem;
+    }
+  
+    #navbar__logo {
+      padding-left: 25px;
+    }
+  
+    .navbar__toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: #fff;
+    }
+  
+    .navbar__item {
+      width: 100%;
+    }
+  
+    .navbar__links {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .navbar__btn {
+      padding-bottom: 2rem;
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80px;
+      margin: 0;
+    }
+  
+    #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+    }
+  
+    .navbar__toggle .bar {
+      display: block;
+      cursor: pointer;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
